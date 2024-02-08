@@ -1,4 +1,4 @@
-# MAL-002
+# MAL-002: Force System Restart via Installed Windows MSIs
 
 Once a software is successfully installed on the system, one or more trusted MSI files will appear in the “C:\Windows\Installer” folder and may allow a low privilege user to perform “repair” and/or “modify” actions as the “NT Authority\System” user without requiring UAC. By using the “msiexec.exe” program with the “/forcerestart” flag, if an attacker successfully performs the “repair” action, the target system will be restarted.
 
@@ -33,6 +33,6 @@ More details and the exploitation process can be found in this [PDF](https://git
 
 - This vulnerability was initially reported to https://msrc.microsoft.com/ on 18-May-2022
 - Vulnerability was considered a non-issue
-- Retested the vulnerability on 23-Jan-2023 and noticed that the vulnerability still works on the newest versions of Windows 11 (OS Build: 22621.3007)
+- Retested the vulnerability on 23-Jan-2024 and noticed that the vulnerability still works on the newest versions of Windows 11 (OS Build: 22621.3007)
 - Publically disclosed the vulnerability on 03-Feb-2024
 
